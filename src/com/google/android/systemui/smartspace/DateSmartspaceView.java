@@ -39,6 +39,7 @@ public class DateSmartspaceView extends LinearLayout implements BcSmartspaceData
     public DoubleShadowTextView mNextAlarmTextView;
     public int mPrimaryTextColor;
     public String mUiSurface;
+    public Handler mBgHandler;
 
     public DateSmartspaceView(Context context) {
         this(context, null);
@@ -226,6 +227,11 @@ public class DateSmartspaceView extends LinearLayout implements BcSmartspaceData
             return;
         }
         throw new IllegalStateException("Must call before attaching view to window.");
+    }
+
+    @Override
+    public void setBgHandler(Handler handler) {
+        this.mBgHandler = handler;
     }
 
     public final void updateColorForExtras() {

@@ -37,6 +37,7 @@ public class WeatherSmartspaceView extends FrameLayout implements BcSmartspaceDa
     public final int mTextDescentExtraPadding;
     public String mUiSurface;
     public DoubleShadowTextView mView;
+    public Handler mBgHandler;
 
     public WeatherSmartspaceView(Context context) {
         this(context, null);
@@ -185,6 +186,11 @@ public class WeatherSmartspaceView extends FrameLayout implements BcSmartspaceDa
             return;
         }
         throw new IllegalStateException("Must call before attaching view to window.");
+    }
+
+    @Override
+    public void setBgHandler(Handler handler) {
+        this.mBgHandler = handler;
     }
 
     public WeatherSmartspaceView(Context context, AttributeSet attributeSet) {

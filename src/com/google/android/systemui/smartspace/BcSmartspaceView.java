@@ -49,6 +49,7 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
     public boolean mAnimateSmartspaceUpdate;
     public final ContentObserver mAodObserver;
     public BcSmartspaceConfigPlugin mConfigProvider;
+    public Handler mBgHandler;
     public int mCardPosition;
     public BcSmartspaceDataPlugin mDataProvider;
     public boolean mIsAodEnabled;
@@ -185,6 +186,11 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
         setScaleX(1.0f);
         setScaleY(1.0f);
         resetPivot();
+    }
+
+    @Override
+    public void setBgHandler(Handler handler) {
+        this.mBgHandler = handler;
     }
 
     public void registerDataProvider(BcSmartspaceDataPlugin plugin) {
