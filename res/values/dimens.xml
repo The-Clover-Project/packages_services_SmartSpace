@@ -5,7 +5,6 @@
     <dimen name="background_bottom_padding">14.0dip</dimen>
     <dimen name="background_top_padding">10.0dip</dimen>
     <dimen name="bg_non_remoteviews_card_padding_horizontal">16.0dip</dimen>
-    <dimen name="date_weather_view_height">24dp</dimen>
     <dimen name="enhanced_smartspace_base_action_icon_margin">8.0dip</dimen>
     <dimen name="enhanced_smartspace_base_action_icon_padding">4.0dip</dimen>
     <dimen name="enhanced_smartspace_card_height">76.0dip</dimen>
@@ -14,7 +13,6 @@
     <dimen name="enhanced_smartspace_icon_inset">2.0dip</dimen>
     <dimen name="enhanced_smartspace_icon_margin">4.0dip</dimen>
     <dimen name="enhanced_smartspace_icon_size">20.0dip</dimen>
-    <dimen name="enhanced_smartspace_margin_start_launcher">16dp</dimen>
     <dimen name="enhanced_smartspace_secondary_card_corner_radius">20.0dip</dimen>
     <dimen name="enhanced_smartspace_secondary_card_padding_end">12.0dip</dimen>
     <dimen name="enhanced_smartspace_secondary_card_start_margin">1.0dip</dimen>
@@ -40,4 +38,9 @@
     <dimen name="weather_dream_complication_text_descent_extra_padding">1.0dip</dimen>
     <dimen name="weather_dream_overlay_complication_line_height">52.0dip</dimen>
     <dimen name="weather_dream_overlay_complication_text_size">45.0dip</dimen>
+
+    <dimen name="pagination_arrow_touch_size">40dp</dimen>
+    <dimen name="pagination_arrow_margin_outer">4dp</dimen>
+    <dimen name="pagination_arrow_margin_inner">2dp</dimen>
+    <dimen name="pager_dots_min_touch_target">48dp</dimen>
 </resources>
